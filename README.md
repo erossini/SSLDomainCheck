@@ -2,6 +2,8 @@
 
 Checks the TLS certificate chain of every URL in a list and flags any chain that involves an **eMudhra / emSign** certificate authority. The results go into a Markdown report (`ca-report.md`).
 
+**Repository:** [github.com/erossini/PythonCheck](https://github.com/erossini/PythonCheck)
+
 ## Background
 
 This tool was written during the investigation into the **eMudhra / emSign CA security incident**. The Python Software Foundation's announcement is here: [Information for Python users regarding eMudhra/emSign CA certificate security incident](https://discuss.python.org/t/information-for-python-users-regarding-emudhra-emsign-ca-certificate-security-incident/109576) (discuss.python.org, 20 October 2026).
@@ -30,6 +32,17 @@ There are two versions of the script, and they produce the same report:
 |---|---|---|
 | `Check-CertificateCA.ps1` | Windows PowerShell 5.1, PowerShell 7+ (Windows, macOS, Linux) | Nothing extra |
 | `check-certificate-ca.sh` | macOS (stock bash 3.2), Linux | `openssl` (or LibreSSL) and `perl` |
+
+## Getting the code
+
+Clone the repository and go into its folder:
+
+```bash
+git clone https://github.com/erossini/PythonCheck.git
+cd PythonCheck
+```
+
+Or download it as a ZIP from the [repository page](https://github.com/erossini/PythonCheck) (**Code** > **Download ZIP**).
 
 ## Quick start
 
@@ -147,6 +160,7 @@ If a host can't be reached (DNS failure, connection refused or timeout), its row
 
 ## References
 
+- [erossini/PythonCheck](https://github.com/erossini/PythonCheck): source code for this tool
 - [Information for Python users regarding eMudhra/emSign CA certificate security incident](https://discuss.python.org/t/information-for-python-users-regarding-emudhra-emsign-ca-certificate-security-incident/109576): the PSF announcement and discussion
 - [eMudhra incident disclosure](https://emudhra.we-have-a-problem.com/): linked from the announcement
 - [python/cpython#160040](https://github.com/python/cpython/issues/160040): "ssl: distrust compromised eMudhra intermediate CA keys"
