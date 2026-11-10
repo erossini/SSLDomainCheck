@@ -1,0 +1,13 @@
+# One entry per line: URL | Service name   (the service name is optional)
+# The URL can be a full URL, a bare domain, or domain:port. Lines starting with # are ignored.
+https://pypi.org/simple/ | PyPI package index
+files.pythonhosted.org   | PyPI package downloads
+www.google.com           | Google
+emsign.com               | emSign website
+puresourcecode.com       | PureSourceCode
+
+# Confirmed on 2026-11-09 to be served with an eMudhra/emSign certificate chain (expected: Affected = YES)
+icar.gov.in              | ICAR (test - emSign)
+eagleconsulting.co.in    | Eagle Consulting (test - emSign)
+erp.vaamaa.com           | Vaamaa ERP (test - emSign)
+imageinfosystems.com     | Image Info Systems (test - emSign)
